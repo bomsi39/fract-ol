@@ -6,7 +6,7 @@
 /*   By: dfranke <dfranke@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/25 15:03:06 by dfranke           #+#    #+#             */
-/*   Updated: 2022/06/15 14:26:24 by dfranke          ###   ########.fr       */
+/*   Updated: 2022/06/15 22:46:39 by dfranke          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,11 @@ typedef struct s_t
 	int		x_pix;				//X POSITION OF PIXEL
 	int		y_pix;				//Y POSITION OF PIXEL
 	int		col[20];			//COLOR ARRAY
-	double	c_re;				//RE NUMBERS THAT ARE BEING ITERATED
-	double	c_im;				//IM NUMBERS THAT ARE BEING ITERATED
+	double	c_re;				//RE COORDINATE OF PIXEL
+	double	c_im;				//IM COORDINATE OF PIXEL
 	double	jul_cre;			//CONSTANT REAL FOR JULIA SET
 	double	jul_cim;			//CONSTANT IMAGINARY FOR JULIA SET
+	int		stop;
 }			t_t;
 
 /* ESSENTIAL */
@@ -54,5 +55,6 @@ void	iterate(t_t *t);
 int		keys(int keycode, t_t *t);
 int		scroll(int keycode, int x, int y, t_t *t);
 int		julia_move(int x, int y, t_t *t);
+int		destroy(t_t *t);
 
 #endif

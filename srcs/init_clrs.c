@@ -6,7 +6,7 @@
 /*   By: dfranke <dfranke@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 14:21:30 by dfranke           #+#    #+#             */
-/*   Updated: 2022/06/15 14:31:33 by dfranke          ###   ########.fr       */
+/*   Updated: 2022/06/15 22:13:00 by dfranke          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,6 @@ void	init_fract(t_t *data, char *str)
 	data->y_min = -2;
 	data->zoom = 4;
 	data->set = str;
+	data->stop = 0;
 	init_color(data);
 }

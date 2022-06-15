@@ -6,7 +6,7 @@
 /*   By: dfranke <dfranke@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 14:17:27 by dfranke           #+#    #+#             */
-/*   Updated: 2022/06/15 14:31:26 by dfranke          ###   ########.fr       */
+/*   Updated: 2022/06/15 16:40:54 by dfranke          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,3 +54,11 @@ void	draw_img(t_t *t)
 	}
 	mlx_put_image_to_window(t->mlx, t->win, t->img, 0, 0);
 }
+
+/* t->zoom represents the observed part of the fractal, at the beginning its 4
+because our coordinate system goes from -2 to 2. If we pixel by pixel we need
+to know how big the distance between the pixels related to our coordinate 
+system and our window size is. The conversion is described in ax and ay. Then
+we move through our windwow pixel per pixel and calculate the maximum 
+iterations
+*/

@@ -6,7 +6,7 @@
 /*   By: dfranke <dfranke@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/15 14:15:25 by dfranke           #+#    #+#             */
-/*   Updated: 2022/06/15 14:32:02 by dfranke          ###   ########.fr       */
+/*   Updated: 2022/06/15 16:46:10 by dfranke          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,9 @@ void	juli(t_t *t)
 	}
 }
 
+/* Julia Set Z = Z^2 + C --> C = Position of the Cursor, Z = Position of Pixel
+*/
+
 void	mandi(t_t *t)
 {
 	double	re;
@@ -47,6 +50,9 @@ void	mandi(t_t *t)
 		t->iter++;
 	}
 }
+
+/* Mandelbrot Set Z = Z^2 + C --> C = Position of Pixel, Z = 0
+*/
 
 void	iterate(t_t *t)
 {
