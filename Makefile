@@ -6,7 +6,7 @@
 #    By: dfranke <dfranke@student.42wolfsburg.de>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/25 18:24:09 by dfranke           #+#    #+#              #
-#    Updated: 2022/06/15 15:06:01 by dfranke          ###   ########.fr        #
+#    Updated: 2022/06/16 11:09:38 by dfranke          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ LIBFT_DIR:=./libft/
 MINILIBX_DIR:=./minilibx_opengl/
 
 
-CC:=gcc
+CC:=gcc -Werror -Wall -Wextra
 SOURCES_DIR:=srcs/
 HEADER_DIR:=includes/
 OBJECTS_DIR:=objs/
